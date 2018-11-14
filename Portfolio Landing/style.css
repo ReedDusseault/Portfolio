@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 150%;
+    color: rgb(71, 71, 71);
+    line-height: 1.8;
+}
+
+#backdrop{
+    background-image:url(../img/backdropwide.jpg);
+    background-size: cover;
+    background-position: right;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:0 25px;
+}
+
+#backdrop h1{
+    font-size: 260%;
+    line-height: 1.1;
+}
+
+#backdrop .button{
+    font-size: 80%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 3px 15px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+
+a{
+    position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    line-height: 35px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #ffac3f, #f441a5,#813db9,#6b63e7,#66bff3, #ffd767, #ffac3f);
+    background-size: 400%;
+    border-radius: 30px;
+    z-index: 1;
+   }
+   a:hover
+   {
+    animation: animate 10s linear infinite;
+   }
+   @keyframes animate
+   {
+    0%
+    {
+     background-position: 0%;
+    }
+    100%
+    {
+     background-position: 400%;
+    }
+   }
+   a:before
+   {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #ffac3f, #f441a5,#813db9,#6b63e7,#66bff3, #ffd767, #ffac3f);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5s;
+   
+    
+   }
+   a:hover:before
+   {
+    
+    filter: blur(10px);
+    opacity:.5;
+    animation: animate 10s linear infinite;
+   }
+
+   #logo{
+    position: absolute;
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column; 
+    padding: 0px;
+    align-self: baseline
+    
+   }
+
+   h6{
+       padding: 0px;
+       position: relative;
+       
+   }
+   
+
+
+   
